@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brigadeirão</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="receitas.css"> <!--Link do css-->
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <script src="brigadeirão.js" type="text/JavaScript" defer></script>
+
+    <script src="main.js" type="text/JavaScript" defer></script>
+
+</head>
+<body>
+    
+    <img src="doces\brigadeirao2.jpg" alt="Imagem do Brigadeirão" style="width: 100%; height: 500px;">
+
+    <div>
+        <menu> 
+            <a class="menu-itens" href="index.html">Home</a>
+            <a class="menu-itens" href="receitas doces.html">Receitas Doces</a>
+            <a class="menu-itens" href="petit gateau.html">Petit Gateau</a>
+            <a class="menu-itens" href="brigadeiro.html">Brigadeiro</a>
+        </menu>
+    </div>
+
+    <center>
+
+        <h1 id="titulo1">Brigadeirão</h1>
+        <p style="font-size: 22px;">Aprenda agora mesmo a fazer um <em>brigadeirão!</em></p>
+
+    </center>
+
+    <center>
+        <p style="font-size: 22px;"><strong>Modo de preparo 🕗:</strong> 1h15min</p>
+    </center>
+
+    <div class="ladoalado">
+        <div>
+            <h3>Ingredientes 🍫</h3>
+            <ul style="font-size: 22px;">
+                <li>2 latas de leite condensado;</li> 
+                <li>1 xícara de achocolatado em pó ou chocolate em pó;</li>
+                <li>1 garrafa de leite de coco;</li>
+                <li>4 ovos</li>
+                <li>1 colher de sopa de margarina.</li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text">Preparo 🥣</h3>
+            <ol class="passo-a-passo" style="font-size: 22px;">
+                <li>Bata todos os ingredientes no liquidificador;</li>
+                <li>Unte uma forma própria para pudim com manteiga e chocolate e despeje a massa;</li>
+                <li>Coloque para cozinhar por até 1 hora em banho-maria ou até ficar firme;</li>
+                <li>Aguarde por 15 minutos até esfriar;</li>
+                <li>Deixe por 1 hora na geladeira;</li>
+                <li>Desenforme o brigadeirão em um prato e cubra com o chocolate granulado.</li>
+            </ol>
+        </div>
+        
+        <div id="carouselComida1" class="carousel slide" data-ride="carousel" style="width:50%;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <iframe class="video" width="700px" height="500px" src="https://www.youtube.com/embed/m2Tx-lObFa8?si=GxcXYihHVRNUYk--" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <center>
+        <h4 class="description"><strong>Sirva-se e delicie seu doce!</strong></h4>
+    </center>
+
+    <center>
+        <table> 
+            <thead>
+                <tr>
+                    <td class="table-title">Ingrediente</td>
+                    <td class="table-title">Link de Compra</td>
+                    <td class="table-title">Valor</td>
+                    <td class="table-title">Quantidade</td>
+                    <td class="table-title">Total</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Leite Condensado</td>
+                    <td><a class="table-itens" href="https://www.paulistaoatacadista.com.br/leite-condensado-piracanjuba-395g-tp/p">Clique e compre</a></td>
+                    <td><input type="number" placeholder="Valor" id="valor1"></td>
+                    <td><input type="number" placeholder="Quantidade" id="qtd1"></td>
+                    <td id="total1"></td>
+                    </tr>
+                <tr>
+                    <td>Chocolate em Pó</td>
+                    <td><a class="table-itens" href="https://www.superpaguemenos.com.br/chocolate-em-po-nestle-50-cacau-dois-frades-200g/p">Clique e compre</a></td>
+                    <td><input type="number" placeholder="Valor" id="valor2"></td>
+                    <td><input type="number" placeholder="Quantidade" id="qtd2"></td>
+                    <td id="total2"></td>
+                </tr>
+                <tr>
+                    <td>Leite de Coco</td>
+                    <td><a class="table-itens" href="https://www.superpaguemenos.com.br/leite-de-coco-sococo-200ml/p">Clique e compre</a></td>
+                    <td><input type="number" placeholder="Valor" id="valor3"></td>
+                    <td><input type="number" placeholder="Quantidade" id="qtd3"></td>
+                    <td id="total3"></td>
+                </tr>
+                <tr>
+                    <td>Ovo</td>
+                    <td><a class="table-itens" href="https://mercado.carrefour.com.br/ovos-brancos-carrefour-20-unidades-5286387/p">Clique e compre</a></td>
+                    <td><input type="number" placeholder="Valor" id="valor4"></td>
+                    <td><input type="number" placeholder="Quantidade" id="qtd4"></td>
+                    <td id="total4"></td>
+                </tr>
+                <tr>
+                    <td>Margarina</td>
+                    <td><a class="table-itens" href="https://www.supermercadossupermais.com.br/produtos/codigo-7893000394209/">Clique e compre</a></td>
+                    <td><input type="number" placeholder="Valor" id="valor5"></td>
+                    <td><input type="number" placeholder="Quantidade" id="qtd5"></td>
+                    <td id="total5"></td>
+                </tr>
+                <tr>
+                    <td colspan="4">Total:</td>
+                    <td id="valorFinal"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </center>
+    
+
+    <center>
+        <footer>
+          <p> &copy; 2024 Cozinhando com Amanda. Todos os direitos reservados.</p>
+        </footer>
+    </center>
+
+</body>
+</html>

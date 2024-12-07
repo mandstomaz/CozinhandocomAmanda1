@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brigadeiro</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="receitas.css"> <!--Link do css-->
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <script src="brigadeiro.js" type="text/JavaScript" defer></script>
+
+    <script src="main.js" type="text/JavaScript" defer></script>
+    
+</head>
+<body>
+
+    <center> 
+
+        <img src="doces\brigadeiro3.jpg" alt="Imagem do Brigadeiro" style="width: 700px;" height="500px;">
+
+    </center>
+   
+    <div>
+        <menu> 
+            <a class="menu-itens" href="index.html">Home</a>
+            <a class="menu-itens" href="receitas doces.html">Receitas Doces</a>
+            <a class="menu-itens" href="petit gateau.html">Petit Gateau</a>
+            <a class="menu-itens" href="brigadeirao.html">Brigadeirão</a>
+        </menu>
+    </div>
+
+    <center>
+
+        <h1 id="titulo1">Brigadeiro</h1>
+        <p style="font-size: 22px;">Aprenda agora mesmo a fazer um <em>brigadeiro!</em></p>
+
+    </center>
+
+    <center>
+        <p style="font-size: 22px;"><strong>Modo de preparo 🕗:</strong> 25min</p>
+    </center>
+
+    <div class="ladoalado">
+        <div>
+            <h3>Ingredientes 🍫</h3>
+            <ul style="font-size: 22px;">
+                <li>1 caixa de leite condensado</li>
+                <li>1 colher (sopa) de margarina sem sal</li>
+                <li>7 colheres (sopa) de achocolatado ou 4 colheres (sopa) de chocolate em pó</li>
+                <li>Chocolate granulado</li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text">Preparo 🥣</h3>
+            <ol class="passo-a-passo" style="font-size: 22px;">
+                <li>Em uma panela funda, acrescente o leite condensado, a margarina e o chocolate em pó.</li>
+                <li>Cozinhe em fogo médio e mexa até que o brigadeiro comece a desgrudar da panela.</li>
+                <li>Deixe esfriar e faça pequenas bolas com a mão passando a massa no chocolate granulado.</li>
+            </ol>
+        </div>
+        
+        <div id="carouselComida1" class="carousel slide" data-ride="carousel" style="width:50%;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <iframe class="video" width="700px" height="500px" src="https://www.youtube.com/embed/6b8mygSR51s?si=4PAt-Yjj5ByZsIxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <center>
+        <h4 class="description"><strong>Sirva-se e delicie seu doce!</strong></h4>
+    </center>
+    
+    <center>
+        <table>
+            <thead>
+                <tr>
+                    <th class="table-title">Ingrediente</th>
+                    <th class="table-title">Link de Compra</th>
+                    <th class="table-title">Valor</th>
+                    <th class="table-title">Quantidade</th>
+                    <th class="table-title">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Leite Condensado</td>
+                    <td><a class="table-itens" href="https://www.paulistaoatacadista.com.br/leite-condensado-piracanjuba-395g-tp/p">Clique e compre</a></td>
+                    <td><input type="number" placeholder="Valor" class="valor"></td>
+                    <td><input type="number" placeholder="Quantidade" class="qtd"></td>
+                    <td class="total"></td>
+                </tr>
+                <tr>
+                    <td>Chocolate em Pó</td>
+                    <td> <a class="table-itens" href="https://www.superpaguemenos.com.br/chocolate-em-po-nestle-50-cacau-dois-frades-200g/p">Clique e compre</a></td>
+                    <td><input type="number" placeholder="Valor" class="valor"></td>
+                    <td><input type="number" placeholder="Quantidade" class="qtd"></td>
+                    <td class="total"></td>
+                </tr>
+                <tr>
+                    <td>Margarina</td>
+                    <td><a class="table-itens" href="https://www.supermercadossupermais.com.br/produtos/codigo-7893000394209/">Clique e compre</a></td>
+                    <td><input type="number" placeholder="Valor" class="valor"></td>
+                    <td><input type="number" placeholder="Quantidade" class="qtd"></td>
+                    <td class="total"></td>
+                </tr>
+                <tr>
+                    <td>Granulado de Chocolate</td>
+                    <td><a class="table-itens" href="https://www.extra.com.br/chocolate-granulado-macio-105kg-dona-jura/p/1564930804?utm_campaign=DescontoEspecial&utm_medium=BuscaOrganica&utm_source=Google">Clique e compre</a></td>
+                    <td><input type="number" placeholder="Valor" class="valor"></td>
+                    <td><input type="number" placeholder="Quantidade" class="qtd"></td>
+                    <td class="total"></td>
+                </tr>
+                <tr>
+                    <td class="table-title" colspan="4">Total:</td>
+                    <td id="totalFinal"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <button class="botao1" onclick="calcular()">Calcular</button> 
+
+    </center>
+
+    <br>
+
+    <center>
+        <footer>
+          <p> &copy; 2024 Cozinhando com Amanda. Todos os direitos reservados.</p>
+        </footer>
+    </center>
+    
+    </body>
+    </html>
